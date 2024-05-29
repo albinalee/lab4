@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Tasks.css">
+    <script src="https://kit.fontawesome.com/8ae267043c.js" crossorigin="anonymous"></script>
+    <style>
+        @media(max-width: 767px) {
+            header {
+                height: 120px;
+            }
+            .header-title {
+                font-size: 54px;
+                line-height: 120px;
+            }
+            header .container div {
+                display: none;
+            }
+            .return {
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+            }
+            p {
+                text-indent: 40px;
+                font-size: 28px;
+                font-family: Calibri;
+                text-align: justify;
+            }
+            span {
+                font-size: 28px;
+            }
+            main {
+                transform: scale(0.8, 0.8);
+            }
+        }
+        p {
+            text-indent: 40px;
+            font-size: 32px;
+            font-family: Calibri;
+            text-align: justify;
+        }
+        body {
+            background: linear-gradient(to bottom, #caac85, #4d4335);
+        }
+        .page-loader {
+            position: absolute;
+            top: -100vh;
+            left: 0;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to top, #c5c56a, green);
+            opacity: 0.9;
+            width: 100vw;
+            height: 100vh;
+            animation: page-loader 3s 0s 1;
+        }
+        @keyframes page-loader {
+            0% {
+                top: 0;
+            }
+            66% {
+                top: 0;
+            }
+            100% {
+                top: -100vh;
+            }
+        }
+        .page-loader h1 {
+            opacity: 0;
+            margin-top: 50px;
+            color: rgb(183, 197, 141);
+            text-shadow: black 5px 8px;
+            font-size: 64px;
+            letter-spacing: 1px;
+            animation: fade-in 3.5s .5s 1;
+        }
+        @keyframes fade-in {
+            20% {
+                margin-top: 0;
+                opacity: 1;
+            }
+            100% {
+                margin-top: 0;
+                opacity: 1;
+            }
+        }
+        .maccha-card {
+            width: 400px;
+            margin: 0 auto;
+            box-shadow: 5px 5px rgba(0, 82, 67, 0.9);
+            font-family: serif;
+        }
+        .card-title {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            z-index: 3;
+            background:rgba(100, 1, 37, 0.8);
+            width: 75%;
+            height: 80px;
+            padding-left: 5%;
+            color: white;
+            font-size: 42px;
+            line-height: 80px;
+        }
+        .text {
+            padding: 30px 50px;
+            color: #93ca76;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-loader">
+        <h1>Welcome</h1>
+    </div>
+    <header>
+        <div class="container">
+            <a href="#" class="header-title">Pageloader</a>
+            <a href="../Homepage.html" class="return">
+                <div>return</div>
+                <i class="fa-solid fa-turn-down"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="maccha-card" style="position: relative;">
+            <div class="description" style="background: #316745; height: 450px; padding: 75px 0;">
+                <img src="../Images/maccha.jpg" alt="" style="display: block; width: 400px; height: 270px;">
+                <div class="card-title">
+                    Matcha dessert
+                </div>
+                <div class="text">
+                    Matcha is a type of green tea and a traditional drink in Japan. Matcha is made by drying tea leaves without rubbing them and then turning them into powder with a mortar
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
