@@ -222,5 +222,92 @@ form .btn {
     animation-delay: 0s;
     animation-iteration-count: infinite;
 }</code>
+</br></br>
+<img src="/images/ball.PNG"></img>
+</br>
+<code>@media(max-width: 767px) {
+            header {
+                height: 120px;
+            }
+            .header-title {
+                font-size: 54px;
+                line-height: 120px;
+            }
+            header .container div {
+                display: none;
+            }
+            .return {
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+            }
+            p {
+                text-indent: 40px;
+                font-size: 28px;
+                font-family: Calibri;
+                text-align: justify;
+            }
+            span {
+                font-size: 28px;
+            }
+            main {
+                transform: scale(0.8, 0.8);
+            }
+        }
+        p {
+            text-indent: 40px;
+            font-size: 32px;
+            font-family: Calibri;
+            text-align: justify;
+        }
+        body {
+            background: linear-gradient(to bottom, #caac85, #4d4335);
+        }
+        .page-loader {
+            position: absolute;
+            top: -100vh;
+            left: 0;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to top, #c5c56a, green);
+            opacity: 0.9;
+            width: 100vw;
+            height: 100vh;
+            animation: page-loader 3s 0s 1;
+        }
+        @keyframes page-loader {
+            0% {
+                top: 0;
+            }
+            66% {
+                top: 0;
+            }
+            100% {
+                top: -100vh;
+            }
+        }
+        .page-loader h1 {
+            opacity: 0;
+            margin-top: 50px;
+            color: rgb(183, 197, 141);
+            text-shadow: black 5px 8px;
+            font-size: 64px;
+            letter-spacing: 1px;
+            animation: fade-in 3.5s .5s 1;
+        }
+        @keyframes fade-in {
+            20% {
+                margin-top: 0;
+                opacity: 1;
+            }
+            100% {
+                margin-top: 0;
+                opacity: 1;
+            }</code>
+</br></br>
+<img src="/images/pageloader.PNG"></img>
+</br>
 <h1 align = "center">Вывод</h1>
 <p>В результате проделанной лабораторной работы, я познакомилась с новыми элементами языка html, потренировалась в написании стилей и более сложных структур разметки.</p>
