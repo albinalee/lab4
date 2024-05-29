@@ -192,30 +192,6 @@ form .btn {
     line-height: 75px;
 }</code>
 </br></br>
-<p>Стилизация таблицы:</p>
-<code>table {	
-	border-collapse: collapse;
-	background-size: cover;
-	text-shadow: 2px 2px gray;
-	background-image: url("https://github.com/albinalee/lab3/blob/main/dog.jpg?raw=true");
-}
-tr:nth-child(even) {
-	background-color: rgba(255, 255, 255, 0.4);
-}
-tr:nth-child(odd) {
-	background-color: rgba(202, 196, 196, 0.7);
-}
-th {	
-	color: white;
-	background-color: #573661;
-}
-th, td {
-	font-size: 24px;
-	text-align: center;
-	padding: 15px 80px;
-	border: 1px solid black;
-}</code>
-</br></br>
 <p>Создание анимации:</p>
 <code>.carousel {
     display: flex;
