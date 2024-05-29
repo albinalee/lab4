@@ -223,7 +223,7 @@ form .btn {
     animation-iteration-count: infinite;
 }</code>
 </br></br>
-<img src="/images/ball.PNG"></img>
+<img src="/Images/ball.PNG"></img>
 </br>
 <code>@media(max-width: 767px) {
             header {
@@ -307,7 +307,7 @@ form .btn {
                 opacity: 1;
             }</code>
 </br></br>
-<img src="/images/pageloader.PNG"></img>
+<img src="/Images/pageloader.PNG"></img>
 </br>
 <h1 align = "center">Вывод</h1>
 <p>В результате проделанной лабораторной работы, я познакомилась с новыми элементами языка html, потренировалась в написании стилей и более сложных структур разметки.</p>
