@@ -63,7 +63,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .menu-btn span,
 .menu-btn span:before,
 .menu-btn span:after {
@@ -75,37 +74,30 @@
     background-color: #ffffff;
     position: absolute;
 }
-
 .menu-btn span:before {
     bottom: 15px;
 }
-
 .menu-btn span:after {
     top: 15px;
 }
-
 .menu-btn:hover {
     opacity: 0.7;
     transition: all .5s;
 }
-
 #menu-btn-check:checked ~ .menu-btn span {
     background-color: rgba(255, 255, 255, 0);
     transition: all .5s;
 }
-
 #menu-btn-check:checked ~ .menu-btn span::before {
     bottom: 0;
     transform: rotate(45deg);
     transition: all .5s;
 }
-
 #menu-btn-check:checked ~ .menu-btn span::after {
     top: 0;
     transform: rotate(-45deg);
     transition: all .5s;
 }
-
 .menu-content {
     position: fixed;
     top: -200%;
@@ -117,7 +109,6 @@
     height: 100vh;
     transition: all 0.5s;
 }
-
 .menu-btn-close {
     display: flex;
     width: 120px;
@@ -127,7 +118,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .menu-btn-close span::before,
 .menu-btn-close span::after {
     content: '';
@@ -138,20 +128,16 @@
     background-color: #ffffff;
     position: absolute;
 }
-
 .menu-btn-close span::before {
     transform: rotate(45deg);
 }
-
 .menu-btn-close span::after {
     transform: rotate(-45deg);
 }
-
 .menu-btn-close:hover {
     opacity: 0.7;
     transition: all .5s;
 }
-
 #menu-btn-check:checked ~ .menu-content {
     top: 0;
 }</code>
@@ -165,17 +151,14 @@
     margin: 0 auto;
     color: white;
 }
-
 label, input {
     display: block;
     font-size: 32px;
     line-height: 32px;
 }
-
 label {
     margin-bottom: 5px;
 }
-
 input {
     width: 280px;
     padding: 0 10px;
@@ -183,7 +166,6 @@ input {
     margin-bottom: 20px;
     outline: none;
 }
-
 form .btn {
     width: 250px;
     height: 75px;
@@ -200,7 +182,6 @@ form .btn {
     margin: 0 auto;
     overflow: hidden;
 }
-
 .carousel img {
     margin: 0;
     padding: 0;
@@ -226,86 +207,87 @@ form .btn {
 <img src="/Images/ball.PNG"></img>
 </br>
 <code>@media(max-width: 767px) {
-            header {
-                height: 120px;
-            }
-            .header-title {
-                font-size: 54px;
-                line-height: 120px;
-            }
-            header .container div {
-                display: none;
-            }
-            .return {
-                width: 100px;
-                height: 100px;
-                border-radius: 50px;
-            }
-            p {
-                text-indent: 40px;
-                font-size: 28px;
-                font-family: Calibri;
-                text-align: justify;
-            }
-            span {
-                font-size: 28px;
-            }
-            main {
-                transform: scale(0.8, 0.8);
-            }
-        }
-        p {
-            text-indent: 40px;
-            font-size: 32px;
-            font-family: Calibri;
-            text-align: justify;
-        }
-        body {
-            background: linear-gradient(to bottom, #caac85, #4d4335);
-        }
-        .page-loader {
-            position: absolute;
-            top: -100vh;
-            left: 0;
-            z-index: 10;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(to top, #c5c56a, green);
-            opacity: 0.9;
-            width: 100vw;
-            height: 100vh;
-            animation: page-loader 3s 0s 1;
-        }
-        @keyframes page-loader {
-            0% {
-                top: 0;
-            }
-            66% {
-                top: 0;
-            }
-            100% {
-                top: -100vh;
-            }
-        }
-        .page-loader h1 {
-            opacity: 0;
-            margin-top: 50px;
-            color: rgb(183, 197, 141);
-            text-shadow: black 5px 8px;
-            font-size: 64px;
-            letter-spacing: 1px;
-            animation: fade-in 3.5s .5s 1;
-        }
-        @keyframes fade-in {
-            20% {
-                margin-top: 0;
-                opacity: 1;
-            }
-            100% {
-                margin-top: 0;
-                opacity: 1;
-            }</code>
+    header {
+        height: 120px;
+    }
+    .header-title {
+        font-size: 54px;
+        line-height: 120px;
+    }
+    header .container div {
+        display: none;
+    }
+    .return {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+    p {
+        text-indent: 40px;
+        font-size: 28px;
+        font-family: Calibri;
+        text-align: justify;
+    }
+    span {
+        font-size: 28px;
+    }
+    main {
+        transform: scale(0.8, 0.8);
+    }
+}
+p {
+    text-indent: 40px;
+    font-size: 32px;
+    font-family: Calibri;
+    text-align: justify;
+}
+body {
+    background: linear-gradient(to bottom, #caac85, #4d4335);
+}
+.page-loader {
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #c5c56a, green);
+    opacity: 0.9;
+    width: 100vw;
+    height: 100vh;
+    animation: page-loader 3s 0s 1;
+}
+@keyframes page-loader {
+    0% {
+        top: 0;
+    }
+    66% {
+        top: 0;
+    }
+    100% {
+        top: -100vh;
+    }
+}
+.page-loader h1 {
+    opacity: 0;
+    margin-top: 50px;
+    color: rgb(183, 197, 141);
+    text-shadow: black 5px 8px;
+    font-size: 64px;
+    letter-spacing: 1px;
+    animation: fade-in 3.5s .5s 1;
+}
+@keyframes fade-in {
+    20% {
+        margin-top: 0;
+        opacity: 1;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}</code>
 </br></br>
 <img src="/Images/pageloader.PNG"></img>
 </br>
